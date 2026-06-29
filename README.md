@@ -23,15 +23,17 @@ Built by [Andrés @ Red Mage Creative Technologies](https://redmage.cc) — bili
 
 ## Install
 
-Copy any skill folder into your Claude Code skills directory:
-
+**All six skills:**
 ```bash
-# individual skill
-cp -r mission-check ~/.claude/skills/
-
-# or the whole spellbook
-cp -r . ~/.claude/skills/
+curl -sSL https://raw.githubusercontent.com/andersthemagi/mission-driven-ai-spellbook/main/install.sh | bash
 ```
+
+**One skill at a time:**
+```bash
+curl -sSL https://raw.githubusercontent.com/andersthemagi/mission-driven-ai-spellbook/main/install.sh | bash -s -- mission-check
+```
+
+Available skill names: `long-run` `mission-check` `prompt-brief` `rao-ready` `ship-check` `ship-plan`
 
 Then invoke with `/skill-name` in any Claude Code session.
 
