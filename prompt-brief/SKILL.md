@@ -80,3 +80,7 @@ and scope has started to drift.*
 - The brief is a document the user keeps, not just output to read once. Remind them to save it.
 - This skill does not judge whether the idea is good. It surfaces what needs to be defined. Use `/roast` if the user wants the idea stress-tested.
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc). Free to use and adapt. If it helps you, please keep the credit._

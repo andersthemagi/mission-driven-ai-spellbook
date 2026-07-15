@@ -214,4 +214,4 @@ Built by [Andrés at Red Mage](https://redmage.cc). The `/vibe-audit` skill was 
 
 Questions, feedback, or want to work together: [andres@redmage.cc](mailto:andres@redmage.cc)
 
-MIT License, free to use, adapt, and share.
+**Free to use, adapt, and share.** If these skills help you, please keep the credit to Andrés at Red Mage (and to Matt "Kelly" Williams at Making Software Greener for `/vibe-audit`). Much of this is AI-generated and may not be copyrightable, so this is a good-faith request, not a legal demand. Each skill carries the same credit line at the bottom of its file, please keep it there when you copy or adapt a skill.

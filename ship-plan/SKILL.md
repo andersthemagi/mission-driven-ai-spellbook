@@ -76,3 +76,7 @@ After these, re-run /ship-check and see where you land.
 - Don't moralize. The gaps aren't failures, they're things that hadn't been named yet. The plan is practical, not judgmental.
 - Don't produce more than five items. A builder with 12 to-do items fixes zero of them. A builder with three fixes two.
 - If the user scored 85+, tell them that and say the plan is optional, they've already done the hard work.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc). Free to use and adapt. If it helps you, please keep the credit._

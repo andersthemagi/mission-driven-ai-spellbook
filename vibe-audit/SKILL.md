@@ -103,3 +103,7 @@ The demo summary never includes file paths, table names, route names, or anythin
 - If the environment can't run sub-agents, run the five passes sequentially in the same order, the lenses and the verify step are what matter, not the parallelism.
 - This produces a technical audit, not a business go/no-go. Pair with `/ship-check` for the ownership question this doesn't answer.
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc), developed with Matt "Kelly" Williams at Making Software Greener. Free to use and adapt. If it helps you, please keep the credit._

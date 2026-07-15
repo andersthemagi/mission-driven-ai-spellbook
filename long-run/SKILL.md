@@ -116,3 +116,7 @@ That's a different question, and the people depending on it deserve the answer.*
 - "What this means" should name a real consequence: "No one else has the API key, so if you're unavailable the tool goes down and takes the intake form with it" beats "single point of failure."
 - This skill does not produce a remediation plan. It surfaces what hasn't been named. Pair with `/ship-plan` if the user wants next steps.
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc). Free to use and adapt. If it helps you, please keep the credit._

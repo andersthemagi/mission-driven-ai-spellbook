@@ -123,3 +123,7 @@ the right questions, not that nothing can go wrong.*
 - "What this means" in the top gaps section should name a real person or situation, not an abstract risk. "No one has the password to the admin panel if you're unavailable" beats "single point of failure on access credentials."
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
 - This skill does not produce a to-do list, a remediation plan, or a pitch. It surfaces what hasn't been named. What the user does with that is their call.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc). Free to use and adapt. If it helps you, please keep the credit._

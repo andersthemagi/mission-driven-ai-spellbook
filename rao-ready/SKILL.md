@@ -90,3 +90,7 @@ projects quietly go wrong.*
 - "Not Ready" is not a judgment, it's a checklist of what to define before the first sprint. The goal is to get to READY, not to block the build.
 - This skill pairs directly with `/ship-check`: /rao-ready runs at the start, /ship-check runs at the end. The questions overlap intentionally, if you answered them here, you'll score higher there.
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc). Free to use and adapt. If it helps you, please keep the credit._

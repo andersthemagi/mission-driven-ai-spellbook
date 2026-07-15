@@ -94,3 +94,7 @@ The people your organization serves deserve to be in this decision.*
 - "What this means" should be specific to this organization and community, not generic risk language. "Your Spanish-speaking clients won't be able to use the English-only interface" beats "localization gap identified."
 - The output should be paste-ready: something an ED could include in a board update or a grant narrative without translation.
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
+
+---
+
+_Part of the [Mission Driven AI Spellbook](https://github.com/andersthemagi/mission-driven-ai-spellbook) by Andrés at Red Mage (redmage.cc). Free to use and adapt. If it helps you, please keep the credit._
