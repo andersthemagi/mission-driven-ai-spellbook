@@ -1,13 +1,13 @@
-# /ship-plan — Test Data
+# /ship-plan, Test Data
 
-Reference runs for calibrating plan quality. Every run here is real — actual findings from an actual audit, anonymized afterward. Add new runs as the skill gets used in the wild.
+Reference runs for calibrating plan quality. Every run here is real, actual findings from an actual audit, anonymized afterward. Add new runs as the skill gets used in the wild.
 
 ---
 
-## Run 001 — Remediation plan from a /vibe-audit (two-sided events marketplace)
+## Run 001, Remediation plan from a /vibe-audit (two-sided events marketplace)
 
 **Date:** 2026-07-15
-**Input type:** Full /vibe-audit output — 11 findings (3 High, 5 Medium, 3 Low), one privilege-escalation chain
+**Input type:** Full /vibe-audit output, 11 findings (3 High, 5 Medium, 3 Low), one privilege-escalation chain
 **Context:** Next.js + Supabase two-sided marketplace, solo builder, pre-alpha, no real users yet, targeting first public release
 
 **The plan produced:**
@@ -22,7 +22,7 @@ These two compose into the worst problem: a fresh signup can self-assign the coo
 **2. Make the server the validation boundary**
 Addresses: Findings 3, 5 · Effort: Half-day
 
-The Zod schemas already exist; they just run in the wrong place. Move each schema into a shared module, import it into the corresponding server action, and replace the `any`-typed input with `schema.parse(input)` at the top of every action that writes. While in there, fix the search path: don't interpolate raw user input into the PostgREST `.or()` filter string — escape it or switch to parameterized `.ilike()` / `.textSearch()` calls.
+The Zod schemas already exist; they just run in the wrong place. Move each schema into a shared module, import it into the corresponding server action, and replace the `any`-typed input with `schema.parse(input)` at the top of every action that writes. While in there, fix the search path: don't interpolate raw user input into the PostgREST `.or()` filter string, escape it or switch to parameterized `.ilike()` / `.textSearch()` calls.
 
 **3. Scope the support-tickets query and verify RLS**
 Addresses: Finding 4 · Effort: Quick
@@ -39,7 +39,7 @@ Addresses: Findings 8, 9 · Effort: Half-day
 
 Delete the dead workflow file and remove the unused service-role key from the live one. Then make the e2e test honest: add a `baseURL` to the Playwright config, point the auth test at a route that exists, and run it locally until it passes. A test that has never run is worse than no test, because it looks like coverage.
 
-Findings 10 and 11 (unguarded logging, duplicated query) are real but don't block release — fold the log cleanup into item 4's pass and extract the shared query next time those files are touched anyway.
+Findings 10 and 11 (unguarded logging, duplicated query) are real but don't block release, fold the log cleanup into item 4's pass and extract the shared query next time those files are touched anyway.
 
 After these, re-run /vibe-audit and confirm the chain is dead before shipping to real users.
 
@@ -47,5 +47,5 @@ After these, re-run /vibe-audit and confirm the chain is dead before shipping to
 
 **Calibration notes:**
 - The skill's template header assumes /ship-check input ("Based on your score of X/100"); this run adapted it for /vibe-audit input (severity counts, finding numbers) without changing the plan structure. The two skills feed ship-plan equally well.
-- The escalation chain led the plan even though item 2 touches more surface area — impact and effort both pointed to slot 1, since the chain is the release blocker and both fixes are quick diffs.
+- The escalation chain led the plan even though item 2 touches more surface area, impact and effort both pointed to slot 1, since the chain is the release blocker and both fixes are quick diffs.
 - The five-item cap was held by demoting, not dropping: the two Low findings got one sentence with a concrete "do it when you're already in that file" path instead of a sixth item.

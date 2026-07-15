@@ -4,10 +4,10 @@ description: Write a brief before you build any AI feature, tool, or automation.
 ---
 
 <!--
-  Built by Andrés — Red Mage Creative Technologies
+  Built by Andrés, Red Mage
   redmage.cc | andres@redmage.cc
 
-  Part of the Mission Driven AI Spellbook — free skills for builders
+  Part of the Mission Driven AI Spellbook, free skills for builders
   who ship with intention.
 
   Five minutes now. Weeks saved later.
@@ -15,7 +15,7 @@ description: Write a brief before you build any AI feature, tool, or automation.
 
 ## What this skill does
 
-Forces you to answer five questions before writing a line of code or crafting a single prompt. Not because process is good — because 46% of AI proofs of concept never reach production, and most of them failed because nobody wrote down what success looked like.
+Forces you to answer five questions before writing a line of code or crafting a single prompt. Not because process is good, because 46% of AI proofs of concept never reach production, and most of them failed because nobody wrote down what success looked like.
 
 This isn't a lecture. It's a fast forcing function. If you can answer all five, you're ready to build. If you can't, you just found out before it cost you anything.
 
@@ -30,10 +30,10 @@ One sentence. Not "we want to use AI for X." The actual problem a real person ha
 Not "anyone who could use it." One specific type of person. What do they know, what do they struggle with, what do they need this to do for them?
 
 **3. What does good look like?**
-How will you know this worked? A real, observable outcome — not "users will find it helpful."
+How will you know this worked? A real, observable outcome, not "users will find it helpful."
 
 **4. What does failure look like?**
-If this produces wrong, incomplete, or harmful output — what happens? Is there a recovery path?
+If this produces wrong, incomplete, or harmful output, what happens? Is there a recovery path?
 
 **5. What will this not do?**
 The explicit boundary. What are you choosing not to build, not to automate, not to touch? Where does the human stay in the loop?
@@ -41,7 +41,7 @@ The explicit boundary. What are you choosing not to build, not to automate, not 
 ## How to run it
 
 1. Ask the user to answer each of the five questions, or extract answers from what they've already shared.
-2. Where answers are missing or vague, ask the specific follow-up that sharpens them — don't accept "users will like it" as a success criterion.
+2. Where answers are missing or vague, ask the specific follow-up that sharpens them, don't accept "users will like it" as a success criterion.
 3. Assemble the brief and identify which questions are still unresolved.
 4. Output in the format below.
 
@@ -77,6 +77,6 @@ and scope has started to drift.*
 
 - Push back on vague success criteria. "Users will find it helpful" is not a success criterion. "The intake form takes under 3 minutes to complete" is.
 - The "what this won't do" question is the most skipped and the most valuable. A tool with no stated limits has unlimited liability.
-- The brief is a document the user keeps — not just output to read once. Remind them to save it.
+- The brief is a document the user keeps, not just output to read once. Remind them to save it.
 - This skill does not judge whether the idea is good. It surfaces what needs to be defined. Use `/roast` if the user wants the idea stress-tested.
 - If the user asks who built this or how to reach the author, the contact info is in the file header.

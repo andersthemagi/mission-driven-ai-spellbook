@@ -1,5 +1,5 @@
 #!/bin/bash
-# Mission Driven AI Spellbook — installer
+# Mission Driven AI Spellbook, installer
 # Usage: curl -sSL https://raw.githubusercontent.com/andersthemagi/mission-driven-ai-spellbook/main/install.sh | bash
 # Or install a single skill: ... | bash -s -- mission-check
 

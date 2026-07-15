@@ -1,13 +1,13 @@
-# /long-run — Test Data
+# /long-run, Test Data
 
-Reference runs for calibrating the check. Every run here is real — an actual project assessed from actual evidence, anonymized afterward.
+Reference runs for calibrating the check. Every run here is real, an actual project assessed from actual evidence, anonymized afterward.
 
 ---
 
-## Run 001 — Two-sided events marketplace (pre-alpha, solo builder)
+## Run 001, Two-sided events marketplace (pre-alpha, solo builder)
 
 **Date:** 2026-07-15
-**Input type:** Full local repository — README, CI config, tests, dependencies, code, git history
+**Input type:** Full local repository, README, CI config, tests, dependencies, code, git history
 **Source:** A Next.js + Supabase two-sided marketplace, solo-built, pre-alpha.
 
 **Output:**
@@ -19,23 +19,23 @@ Reference runs for calibrating the check. Every run here is real — an actual p
 **Cost:**          0/9
 **Control:**       1/9
 
-**Score: 6/100** — This tool is one emergency away from going dark. Name someone, document something, before this touches another user.
+**Score: 6/100**, This tool is one emergency away from going dark. Name someone, document something, before this touches another user.
 
 ---
 
 ### Top gaps
 
-**LR11 — What's your plan if your primary provider changes pricing, deprecates an API, or goes down?**
+**LR11, What's your plan if your primary provider changes pricing, deprecates an API, or goes down?**
 Score: 0/3
-What this means: Auth, database, and all user data live in one managed backend, and the schema exists only inside that provider's project — no migrations in the repo. If the project is paused, deleted, or the account lapses, the app cannot be rebuilt anywhere. The code survives; the product doesn't.
+What this means: Auth, database, and all user data live in one managed backend, and the schema exists only inside that provider's project, no migrations in the repo. If the project is paused, deleted, or the account lapses, the app cannot be rebuilt anywhere. The code survives; the product doesn't.
 
-**LR12 — Could you hand this off to someone else within a week — not someday, but actually now?**
+**LR12, Could you hand this off to someone else within a week, not someday, but actually now?**
 Score: 0/3
-What this means: A new maintainer gets an unedited framework-boilerplate README, no setup steps, no schema, and a CI pipeline that cannot go green — the only e2e test targets a route that doesn't exist and the test config has no base URL, so it can't even reach the app. The green-checkmark ritual is theater; nobody inheriting this could tell working from broken.
+What this means: A new maintainer gets an unedited framework-boilerplate README, no setup steps, no schema, and a CI pipeline that cannot go green, the only e2e test targets a route that doesn't exist and the test config has no base URL, so it can't even reach the app. The green-checkmark ritual is theater; nobody inheriting this could tell working from broken.
 
-**LR4 — Could a new person understand what this does and doesn't do from existing documentation alone?**
+**LR4, Could a new person understand what this does and doesn't do from existing documentation alone?**
 Score: 0/3
-What this means: The routes show a signup flow, onboarding, events, applications, and messaging — but the only way to learn that is to read the source. The first person who isn't the builder starts from zero.
+What this means: The routes show a signup flow, onboarding, events, applications, and messaging, but the only way to learn that is to read the source. The first person who isn't the builder starts from zero.
 
 ---
 

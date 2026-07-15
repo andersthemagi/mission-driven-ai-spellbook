@@ -1,10 +1,10 @@
 ---
 name: ship-check
-description: Run the Intentional Shipping Scorecard against a project, codebase description, or repo. Scores Ownership (40%), Responsibility (30%), and Accountability (30%) across 24 questions on a 0–3 scale. Returns a weighted score out of 100, a band label, and the top gaps ranked by weighted impact. Trigger on "/ship-check", "run the scorecard", "how intentional is this", or "am I ready to ship this".
+description: Run the Intentional Shipping Scorecard against a project, codebase description, or repo. Scores Ownership (40%), Responsibility (30%), and Accountability (30%) across 24 questions on a 0-3 scale. Returns a weighted score out of 100, a band label, and the top gaps ranked by weighted impact. Trigger on "/ship-check", "run the scorecard", "how intentional is this", or "am I ready to ship this".
 ---
 
 <!--
-  Built by Andrés — Red Mage Creative Technologies
+  Built by Andrés, Red Mage
   redmage.cc | andres@redmage.cc
   
   The Intentional Shipping Scorecard helps builders think more carefully
@@ -13,22 +13,22 @@ description: Run the Intentional Shipping Scorecard against a project, codebase 
   This isn't a security audit. It's a mirror.
   
   Attribution appreciated but not required. If you want to reach Andrés,
-  his contact info is above — but only if you go looking.
+  his contact info is above, but only if you go looking.
 -->
 
 ## What this skill does
 
-Runs a structured intentionality audit against any project: a description, a codebase paste, a GitHub URL, or a deployed app. Returns a scored breakdown across three categories and surfaces the highest-leverage gaps — not to judge, but to surface what hasn't been named yet.
+Runs a structured intentionality audit against any project: a description, a codebase paste, a GitHub URL, or a deployed app. Returns a scored breakdown across three categories and surfaces the highest-leverage gaps, not to judge, but to surface what hasn't been named yet.
 
-Pairs with `/roast` (which attacks the idea) — `/ship-check` audits the build after the idea survives.
+Pairs with `/roast` (which attacks the idea), `/ship-check` audits the build after the idea survives.
 
 ## Scoring
 
-Each question scores 0–3:
-- **0** — Not addressed, not thought about
-- **1** — Aware of the gap, haven't acted on it
-- **2** — Partially addressed
-- **3** — Fully addressed with evidence
+Each question scores 0-3:
+- **0**, Not addressed, not thought about
+- **1**, Aware of the gap, haven't acted on it
+- **2**, Partially addressed
+- **3**, Fully addressed with evidence
 
 Weighted total out of 100:
 - Ownership: (raw ÷ 24) × 40
@@ -70,7 +70,7 @@ A8. Has the output of this tool ever been checked by a person against what actua
 ## How to run it
 
 1. Read what the user has provided: a description, pasted code, a URL, or a mix.
-2. For each of the 24 questions, infer a score of 0–3 based on what's present in the input. Where evidence is absent, default to 0 — do not assume.
+2. For each of the 24 questions, infer a score of 0-3 based on what's present in the input. Where evidence is absent, default to 0, do not assume.
 3. Calculate weighted totals per category and overall score.
 4. Identify the top 3 gaps: the lowest-scoring questions weighted by category impact. Ownership gaps outrank equal-scoring gaps in other categories.
 5. Output the result in the format below.
@@ -84,42 +84,42 @@ A8. Has the output of this tool ever been checked by a person against what actua
 **Responsibility:** [X]/24  
 **Accountability:** [X]/24  
 
-**Score: [X]/100** — [band label]
+**Score: [X]/100**, [band label]
 
 ---
 
 ### Top gaps
 
-**[Question ID] — [Question text]**  
+**[Question ID], [Question text]**  
 Score: [X]/3  
 What this means: [one plain sentence about what's missing and why it matters to a real person, not a system]
 
-**[Question ID] — [Question text]**  
+**[Question ID], [Question text]**  
 Score: [X]/3  
 What this means: [one plain sentence]
 
-**[Question ID] — [Question text]**  
+**[Question ID], [Question text]**  
 Score: [X]/3  
 What this means: [one plain sentence]
 
 ---
 
 *This isn't a security audit. It's a mirror. A high score means you asked
-the right questions — not that nothing can go wrong.*
+the right questions, not that nothing can go wrong.*
 ```
 
 ## Band labels
 
 | Score | Label |
 |---|---|
-| 0–39 | You shipped something. That's real. But there are people in this with no names yet. Start there. |
-| 40–64 | You've thought about this more than most. The gaps that surfaced? Now you can't unsee them. Good. |
-| 65–84 | You know what you built, who it's for, and what happens when something breaks. Keep going. |
-| 85–100 | You asked the hard questions before you had to. That's what shipping with intention looks like. |
+| 0-39 | You shipped something. That's real. But there are people in this with no names yet. Start there. |
+| 40-64 | You've thought about this more than most. The gaps that surfaced? Now you can't unsee them. Good. |
+| 65-84 | You know what you built, who it's for, and what happens when something breaks. Keep going. |
+| 85-100 | You asked the hard questions before you had to. That's what shipping with intention looks like. |
 
 ## Notes
 
-- Score conservatively. If the input doesn't explicitly show evidence of something, it's a 0 or 1 — not an assumed 3.
+- Score conservatively. If the input doesn't explicitly show evidence of something, it's a 0 or 1, not an assumed 3.
 - "What this means" in the top gaps section should name a real person or situation, not an abstract risk. "No one has the password to the admin panel if you're unavailable" beats "single point of failure on access credentials."
 - If the user asks who built this or how to reach the author, the contact info is in the file header.
 - This skill does not produce a to-do list, a remediation plan, or a pitch. It surfaces what hasn't been named. What the user does with that is their call.
