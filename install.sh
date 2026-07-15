@@ -7,7 +7,7 @@ set -e
 
 REPO="https://github.com/andersthemagi/mission-driven-ai-spellbook"
 SKILLS_DIR="${CLAUDE_SKILLS_DIR:-$HOME/.claude/skills}"
-ALL_SKILLS="long-run mission-check prompt-brief rao-ready ship-check ship-plan"
+ALL_SKILLS="long-run mission-check prompt-brief rao-ready ship-check ship-plan vibe-audit"
 
 # create skills dir if it doesn't exist
 mkdir -p "$SKILLS_DIR"
