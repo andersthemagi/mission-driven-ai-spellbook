@@ -2,7 +2,7 @@
 
 Free, portable skills for builders who ship with intention, plain-markdown instructions that run in Claude Code, Cursor, Gemini CLI, or any coding agent.
 
-Seven skills. One question each. The full journey from "should we build this" to "can it last."
+Eight skills. One question each. The full journey from "should we build this" to "can it last."
 
 Built by [Andrés at Red Mage](https://redmage.cc).
 
@@ -13,6 +13,7 @@ Built by [Andrés at Red Mage](https://redmage.cc).
 | When | Skill | The question |
 |---|---|---|
 | Before deciding | [`/mission-check`](#mission-check) | Should we adopt or build this? |
+| Before hiring | [`/brief-check`](#brief-check) | Does this brief ask for the work, or only for free answers? |
 | Before building | [`/prompt-brief`](#prompt-brief) | Did we actually think this through? |
 | Before shipping | [`/rao-ready`](#rao-ready) | Do we have a named owner? |
 | At the ship gate | [`/ship-check`](#ship-check) | Are we shipping with intention? |
@@ -41,7 +42,7 @@ Want a summary you can share without exposing your codebase? `/vibe-audit --demo
 
 ## Install
 
-**All seven skills:**
+**All eight skills:**
 ```bash
 curl -sSL https://raw.githubusercontent.com/andersthemagi/mission-driven-ai-spellbook/main/install.sh | bash
 ```
@@ -51,7 +52,7 @@ curl -sSL https://raw.githubusercontent.com/andersthemagi/mission-driven-ai-spel
 curl -sSL https://raw.githubusercontent.com/andersthemagi/mission-driven-ai-spellbook/main/install.sh | bash -s -- mission-check
 ```
 
-Available skill names: `long-run` `mission-check` `prompt-brief` `rao-ready` `ship-check` `ship-plan` `vibe-audit`
+Available skill names: `brief-check` `long-run` `mission-check` `prompt-brief` `rao-ready` `ship-check` `ship-plan` `vibe-audit`
 
 Then invoke with `/skill-name` in any Claude Code session.
 
@@ -93,6 +94,16 @@ See [CHANGELOG.md](CHANGELOG.md) for what changed between versions; the toolkit 
 Covers mission fit, organizational readiness, community and trust, and honest need. Returns a **PROCEED / PAUSE / RECONSIDER** verdict with the questions that drove it. Output is paste-ready for a board update or grant narrative.
 
 Written for teams of 2-20 where the ED also does the grant reports. Not for 50-person IT departments.
+
+---
+
+### /brief-check
+
+**For:** Anyone about to post a job or send a project brief to freelancers, agencies, or advisers, and anyone deciding whether to answer one.
+
+**The question:** Does this brief ask for the work, or only for free answers?
+
+Scores seven checks Green, Yellow, or Red: end state, price, deliverables, owner, work asked for before pay, round limit, and access to private code or data. Rewrites the weakest part of the brief and gives one next step. Run it on the brief `/prompt-brief` gives you, before it goes to a person.
 
 ---
 
