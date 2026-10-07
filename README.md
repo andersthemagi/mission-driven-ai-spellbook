@@ -1,5 +1,7 @@
 # Mission Driven AI Spellbook
 
+> **This project has moved.** The skills continue as the [Red Mage AI Spellbook](https://github.com/andersthemagi/red-mage-ai-spellbook), which adds a new skill, `/brief-check`. This repository stays up so existing install links keep working, but new skills and fixes land there.
+
 Free, portable skills for builders who ship with intention, plain-markdown instructions that run in Claude Code, Cursor, Gemini CLI, or any coding agent.
 
 Seven skills. One question each. The full journey from "should we build this" to "can it last."
